@@ -1567,7 +1567,6 @@ document.addEventListener('mouseup', function() {
 function handleTouchStart(button) {
     button.addEventListener('touchstart', function(event) {
         this.style.transform = 'scale(0.8)';
-        event.preventDefault(); // Prevent default touch behavior
     });
 }
 
@@ -1575,7 +1574,6 @@ function handleTouchStart(button) {
 function handleTouchEnd(button) {
     button.addEventListener('touchend', function(event) {
         this.style.transform = 'scale(1)';
-        event.preventDefault(); // Prevent default touch behavior
     });
 }
 
